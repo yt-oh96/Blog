@@ -29,17 +29,17 @@
   -> <mark>입의 특징을 비교하여 어떤 단어를 말하고 있는 것인지를 알아내야한다.</mark>
 
 #### Step 1 얼굴 찾기
-<img src="/images/step1_1.png" width="200" height="200">
+<img src="./images/step1_1.png" width="200" height="200">
 
 
  얼굴을 인식할때 컬러정보는 필요없기 때문에 흑백 사진으로 변환을 해준다.
  
  
- <img src="/images/step1_2.png" width="300" height="100">
+ <img src="./images/step1_2.png" width="300" height="100">
  
  그 후 인접 픽셀과 비교하여 어두워지는 방향을 나타내는 화살표를 그려준다.
  
-  <img src="/images/step1_3.png" width="300" height="300">
+  <img src="./images/step1_3.png" width="300" height="300">
   
  이미지의 모든 픽셀에 대해 이 작업을 해주면 모든 픽셀이 위와 같은 화살표로 바뀌게 된다.
  
