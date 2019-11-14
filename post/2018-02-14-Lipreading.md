@@ -29,7 +29,7 @@
   -> <mark>입의 특징을 비교하여 어떤 단어를 말하고 있는 것인지를 알아내야한다.</mark>
 
 #### Step 1 얼굴 찾기
-![img](img src="./images/step1_1.png){: width="200" height="200">
+![img](/images/step1_1.png){: width="200" height="200"}
 
 
  얼굴을 인식할때 컬러정보는 필요없기 때문에 흑백 사진으로 변환을 해준다.
