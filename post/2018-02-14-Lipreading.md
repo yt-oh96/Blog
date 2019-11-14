@@ -29,17 +29,17 @@
   -> <mark>입의 특징을 비교하여 어떤 단어를 말하고 있는 것인지를 알아내야한다.</mark>
 
 #### Step 1 얼굴 찾기
-<img src="./images/step1_1.png" width="200" height="200">
+![img](img src="./images/step1_1.png){: width="200" height="200">
 
 
  얼굴을 인식할때 컬러정보는 필요없기 때문에 흑백 사진으로 변환을 해준다.
  
  
- <img src="./images/step1_2.png" width="300" height="100">
+ ![img](/images/step1_2.png){: width="300" height="100"}
  
  그 후 인접 픽셀과 비교하여 어두워지는 방향을 나타내는 화살표를 그려준다.
  
-  <img src="./images/step1_3.png" width="300" height="300">
+  ![img](/images/step1_3.png){: width="300" height="300"}
   
  이미지의 모든 픽셀에 대해 이 작업을 해주면 모든 픽셀이 위와 같은 화살표로 바뀌게 된다.
  
@@ -48,7 +48,7 @@
 교정과 투영은 얼굴이 다른 방향을 보고있을 경우를 해결해 주기 위해 적용해주는 기법이다. 이를 해결하기 위해서 landmark라 부르는 특정 포인트를 찾아내게 된다. 기계 학습 알고리즘을 훈련시켜 이러한 포인트들을 찾을 수 있도록 한다.
  
 ->우리의 Project에서는 정면을 바라보는 얼굴로 한정해주었기 때문에 이 단계에서는 다음 단계를 위한 landmark만 찾게 해주면 된다.
-<img src="/images/step2.png" width="200" height="200">
+![img](/images/step2.png){: width="200" height="200"}
 
 dlib를 이용하여 이 과정을 수행 할 수 있다.
 
@@ -70,7 +70,7 @@ for i in range(48, 68):
 #### Step 4 인코딩에서 사람의 이름 찾기
 원래 이 Step에서는 해당하는 사람의 이름을 찾게된다. 하지만 우리는 해당하는 단어를 찾아야하므로 인코딩과 단어가 매칭되게끔 하는 것이 최종 과제일 것이다.
 
-<img src="/images/step4.png" width="250" height="200">
+![img](/images/step4.png){: width="250" height="200"}
 
 ----
 
@@ -92,4 +92,4 @@ for i in range(48, 68):
             cv2.rectangle(frame, (min_x,min_y), (max_x, max_y), (120,160,230),2)
 ~~~
 
-<img src="/images/re.png" width="250" height="250">
+![img](/images/re.png){: width="250" height="250"}
